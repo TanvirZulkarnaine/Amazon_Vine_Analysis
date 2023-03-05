@@ -1,4 +1,7 @@
 # Amazon_Vine_Analysis
+[Amazon Review Dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt)
+
+[Link to download the dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Video_Games_v1_00.tsv.gz)
 # Overview
 The purpose of this project is to perform data analysis on amazon’s video game reviews written by members of the paid Amazon Vine Program. Companies like to play a small fee to Amazon and provide products to Amazon Vine members, who are then required to publish a review. I was examining to see if there were any bias on the reviews based on if they were in  the Vine (paid) program. 
 I have performed ETL process on the Amazon’s video game review dataset. I, first downloaded the data and stored it into AWS services, namely, S3 buckets. After that, I used PySpark to gather the data from my S3 bucket instance and store it into a table/dataframe and then I ran analysis on the data. Then I connected AWS RDS instance to load my transformed data into pgAdmin. Lastly, I used PySpark, and SQL queries to determine if there were any bias towards favorable reviews from Vine members in the dataset.
